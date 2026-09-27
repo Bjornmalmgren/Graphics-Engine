@@ -1,0 +1,87 @@
+#version 430
+out vec4 FragColor;
+
+layout (location = 4)in vec2 TexCoords;
+
+
+uniform vec3 Position;
+uniform vec3 Color;
+
+uniform float Linear;
+uniform float Quadratic;
+
+layout (location = 0)uniform sampler2D gPosition;
+layout (location = 1)uniform sampler2D gNormal;
+layout (location = 2)uniform sampler2D gAlbedoSpec;
+
+uniform vec3 viewPos;
+uniform int isDir;
+uniform vec3 lightDirection;
+uniform float radius;
+vec2 screensize = vec2(2560,1440);
+void main(){
+
+	vec2 textCoords = gl_FragCoord.xy / screensize.xy;
+	vec3 FragPos = texture(gPosition, textCoords).rgb;
+	vec3 Normal = texture(gNormal, textCoords).rgb;
+	vec4 albedoSpec = texture(gAlbedoSpec, textCoords);
+	vec3 Diffuse = albedoSpec.rgb;
+	float Specular = albedoSpec.a;
+	
+	vec3 lighting = Diffuse * 0.1;
+	float ambientStrength = 0.1;
+	if(isDir == 1){
+		vec3 viewDir = normalize(-lightDirection);
+		vec3 lightDir = normalize(Position - FragPos);
+		vec3 diffuse = max(dot(Normal, lightDir), 0.0) * Diffuse * Color;
+        // specular
+        vec3 halfwayDir = normalize(lightDir + viewDir);  
+        float spec = pow(max(dot(Normal, halfwayDir), 0.0), albedoSpec.a);
+        vec3 specular = Color * spec * Specular;
+        // attenuation
+        float distance = length(Position - FragPos);
+        float attenuation = 0.5 / (1.0 + Linear * distance + Quadratic * distance * distance);
+        diffuse *= attenuation;
+        specular *= attenuation;
+        lighting += diffuse + specular; 
+	}else{
+		vec3 lightDir = Position - texture(gPosition, textCoords).xyz;
+		//vec3 lightDir = normalize(Position - FragPos);
+		float distance = dot(lightDir,lightDir);
+		lightDir = normalize(lightDir);
+		float NdotL = dot(Normal,lightDir);
+
+		if(distance < radius && NdotL >= 0.0){
+			vec3 ambient = ambientStrength * Color;
+			vec3 specular = vec3(0,0,0);
+			float diff = max(dot(Normal,lightDir),0.0);
+			vec3 diffuse = diff * Color;
+			if(diff >0){
+				vec3 viewDir = normalize(viewPos-texture(gPosition,textCoords).xyz);
+				vec3 halfDir = normalize(lightDir + viewDir);
+				float spec = pow(max(dot(halfDir, Normal), 0.0), texture(gAlbedoSpec, textCoords).w);
+				specular = 0.5 * spec * Color;
+			}
+			
+		
+			float attenuation = max(min(1.0-pow(distance/radius,4),1),0) / pow(distance,2);
+			//float attenuation = max( min( 1.0f - pow(( distance / range ),4), 1 ), 0 ) / distance*distance;
+			diffuse *= attenuation *3;
+			specular *= attenuation*3;
+			ambient *= attenuation*3;
+			lighting = (ambient + diffuse + specular);
+		}else{
+			lighting = vec3(0,0,0); 
+		}
+		
+		
+		
+		
+	}
+	
+	FragColor = vec4(lighting * texture(gAlbedoSpec,textCoords).xyz, 0);
+	//FragColor = vec4(TexCoords,0, 1);
+	
+	
+
+} 

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\window.cc">
+      <Filter>display</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\grid.cc">
+      <Filter>display</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\Meshresource.cpp">
+      <Filter>display</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\PointLight.cpp">
+      <Filter>display</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\Material.cpp">
+      <Filter>display</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\textureResource.cpp">
+      <Filter>display</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\config.cc">
+      <Filter>pch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\window.h">
+      <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\grid.h">
+      <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\Meshresource.h">
+      <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\PointLight.h">
+      <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\Material.h">
+      <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\Camera.h">
+      <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\textureResource.h">
+      <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\stb_image.h">
+      <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\config.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\fragmentShader.glfs">
+      <Filter>display</Filter>
+    </None>
+    <None Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\vertexShader.glvs">
+      <Filter>display</Filter>
+    </None>
+    <None Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\fragmentShaderOld.glfs">
+      <Filter>display</Filter>
+    </None>
+    <None Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\vertexShaderOld.glvs">
+      <Filter>display</Filter>
+    </None>
+    <None Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\g_buffer.glfs">
+      <Filter>display</Filter>
+    </None>
+    <None Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\g_buffer.glvs">
+      <Filter>display</Filter>
+    </None>
+    <None Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\deferred_shading.glfs">
+      <Filter>display</Filter>
+    </None>
+    <None Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\deferred_shading.glvs">
+      <Filter>display</Filter>
+    </None>
+    <None Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\deferred_light_box.glfs">
+      <Filter>display</Filter>
+    </None>
+    <None Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\engine\render\deferred_light_box.glvs">
+      <Filter>display</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="display">
+      <UniqueIdentifier>{8888B48D-37B1-3D8F-A68F-E63C099ABF0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{DBB331BF-E41F-3591-A8C1-7AF4D2EDB299}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

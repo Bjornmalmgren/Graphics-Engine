@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\projects\ShaderAndNode\code\ShaderAndNode.cc">
+      <Filter>ShadAndNode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\projects\ShaderAndNode\code\ShaderAndNodeMain.cc">
+      <Filter>ShadAndNode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\projects\ShaderAndNode\code\ShaderAndNode.h">
+      <Filter>ShadAndNode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\bjmall-3-local\Documents\GitHub\s0009e-lab-env-Bjornmalmgren\projects\ShaderAndNode\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ShadAndNode">
+      <UniqueIdentifier>{3DCFF13B-2136-3D99-9A84-A6082F519150}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/exts/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/exts/glew/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/exts/glfw/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/exts/glfw/src/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/engine/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/engine/core/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/engine/render/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/projects/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/projects/CameraAndTexture/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/projects/Deferedshading/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/projects/ImGuiExample/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/projects/MaterialAndGLTF/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/projects/OBJandLighting/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/projects/ShaderAndNode/cmake_install.cmake",
+		"C:/Users/bjmall-3-local/Documents/GitHub/s0009e-lab-env-Bjornmalmgren/cmk/projects/example/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
